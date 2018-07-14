@@ -53,7 +53,7 @@ def parse_config():
 		max_users = max_users_default
 	
 	try:
-		allow_encryption = config_server.getboolean('allowencryption', debug_default)
+		allow_encryption = config_server.getboolean('allowencryption', allow_encryption_default)
 	except:
 		errorWith.append('allowencryption')
 		allow_encryption = allow_encryption_default
